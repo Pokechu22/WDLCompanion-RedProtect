@@ -29,7 +29,7 @@
 					<relocations>
 						<relocation>
 							<pattern>org.mcstats</pattern>
-							<shadedPattern>wdl.worldguard</shadedPattern>
+							<shadedPattern>wdl.redprotect</shadedPattern>
 						</relocation>
 					</relocations>
 				</configuration>

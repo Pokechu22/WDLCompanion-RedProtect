@@ -1,0 +1,7 @@
+name: WDLCompanionRedProtectSupport
+main: wdl.redprotect.RedProtectSupportPlugin
+version: 0.0.1
+author: Pokechu22
+depend: [WDLCompanion, RedProtect]
+website: http://dev.bukkit.org/bukkit-plugins/wdl-companion-redprotect-support/
+description: "-"
