@@ -52,6 +52,6 @@ public class RedProtectSupportPlugin extends JavaPlugin implements Listener {
 	
 	@EventHandler
 	public void registerRangeGroupTypes(RangeGroupTypeRegistrationEvent e) {
-		
+		e.addRegistration("Owned RedProtect regions", new OwnedRegionRangeGroupType());
 	}
 }
