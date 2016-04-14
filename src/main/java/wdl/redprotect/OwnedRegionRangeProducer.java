@@ -30,11 +30,11 @@ public class OwnedRegionRangeProducer implements IRangeProducer {
 			if (!type.isValidRegionForPlayer(player, region)) {
 				continue;
 			}
-			int minX = (int)Math.ceil(region.getMinMbrX() / 16f);
-			int maxX = (int)Math.ceil(region.getMaxMbrX() / 16f);
-			int minZ = (int)Math.ceil(region.getMinMbrZ() / 16f);
-			int maxZ = (int)Math.ceil(region.getMaxMbrZ() / 16f);
-			returned.add(new ProtectionRange(region.getID(), minX, maxX, minZ, maxZ));
+			int minX = (int)Math.floor(region.getMinMbrX() / 16f);
+			int maxX = (int)Math.floor(region.getMaxMbrX() / 16f);
+			int minZ = (int)Math.floor(region.getMinMbrZ() / 16f);
+			int maxZ = (int)Math.floor(region.getMaxMbrZ() / 16f);
+			returned.add(new ProtectionRange(region.getID(), minX, minZ, maxX, maxZ));
 		}
 		return returned;
 	}
