@@ -22,22 +22,19 @@ public enum OwnershipType {
 	LEADER("leader") {
 		@Override
 		public boolean isValidRegionForPlayer(Player player, Region region) {
-			// TODO Auto-generated method stub
-			return false;
+			return region.isLeader(player);
 		}
 	},
 	ADMIN("admin") {
 		@Override
 		public boolean isValidRegionForPlayer(Player player, Region region) {
-			// TODO Auto-generated method stub
-			return false;
+			return region.isLeader(player) || region.isAdmin(player);
 		}
 	},
 	MEMBER("member", "any", "all") {
 		@Override
 		public boolean isValidRegionForPlayer(Player player, Region region) {
-			// TODO Auto-generated method stub
-			return false;
+			return region.isLeader(player) || region.isAdmin(player) || region.isMember(player);
 		}
 	};
 	
