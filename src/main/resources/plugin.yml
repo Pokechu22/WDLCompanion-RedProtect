@@ -4,4 +4,4 @@ version: 0.0.1
 author: Pokechu22
 depend: [WDLCompanion, RedProtect]
 website: http://dev.bukkit.org/bukkit-plugins/wdl-companion-redprotect-support/
-description: "-"
+description: Adds a ChunkOverride type, 'Owned RedProtect regions', which allows a player to download in RedProtect regions they own.

@@ -5,6 +5,7 @@
 	<artifactId>WDLCompanionRedProtectSupport</artifactId>
 	<version>0.0.1</version>
 	<name>RedProtect support for WDLCompanion</name>
+	<description>Adds a ChunkOverride type, 'Owned RedProtect regions', which allows a player to download in RedProtect regions they own.</description>
 	<build>
 		<plugins>
 			<plugin>
